@@ -1,0 +1,24 @@
+{
+  "author": "Pawel Kania",
+  "name": "itzen/html2canvas",
+  "description": "Yii html2canvas plugin",
+  "keywords": [
+    "yii",
+    "html2canvas"
+  ],
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.3.2",
+    "yiisoft/yii": "1.1.*"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "autoload": {
+    "classmap": [
+      "Html2CanvasPortlet.php"
+    ]
+  }
+}
