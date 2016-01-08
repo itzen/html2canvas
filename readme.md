@@ -46,11 +46,7 @@ The function returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/Ja
     });
 
 
-
 ### Examples ###
 
 For more information and examples, please visit the [homepage](http://html2canvas.hertzen.com) or try the [test console](http://html2canvas.hertzen.com/screenshots.html).
 
-### Contributing ###
-
-If you wish to contribute to the project, please send the pull requests to the develop branch. Before submitting any changes, try and test that the changes work with all the support browsers. If some CSS property isn't supported or is incomplete, please create appropriate tests for it as well before submitting any code changes.
