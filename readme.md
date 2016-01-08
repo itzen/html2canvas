@@ -3,8 +3,6 @@ html2canvas
 
 [Homepage](http://html2canvas.hertzen.com) | [Downloads](https://github.com/niklasvh/html2canvas/releases) | [Questions](http://stackoverflow.com/questions/tagged/html2canvas?sort=newest) | [Donate](https://www.gittip.com/niklasvh/)
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/niklasvh/html2canvas?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Build Status](https://travis-ci.org/niklasvh/html2canvas.png)](https://travis-ci.org/niklasvh/html2canvas)
-
 #### JavaScript HTML renderer ####
 
  The script allows you to take "screenshots" of webpages or parts of it, directly on the users browser. The screenshot is based on the DOM and as such may not be 100% accurate to the real representation as it does not make an actual screenshot, but builds the screenshot based on the information available on the page.
@@ -47,39 +45,7 @@ The function returns a [Promise](https://developer.mozilla.org/en-US/docs/Web/Ja
         document.body.appendChild(canvas);
     });
 
-### Building ###
 
-The library uses [grunt](http://gruntjs.com/) for building. Alternatively, you can download the latest build from [here](https://github.com/niklasvh/html2canvas/blob/master/dist/html2canvas.js).
-
-Clone git repository with submodules:
-
-    $ git clone --recursive git://github.com/niklasvh/html2canvas.git
-
-Install Grunt and uglifyjs:
-
-    $ npm install -g grunt-cli uglify-js
-
-Run the full build process (including lint, qunit and webdriver tests):
-
-    $ grunt
-
-Skip lint and tests and simply build from source:
-
-    $ grunt build
-
-### Running tests ###
-
-The library has two sets of tests. The first set is a number of qunit tests that check that different values parsed by browsers are correctly converted in html2canvas. To run these tests with grunt you'll need [phantomjs](http://phantomjs.org/).
-
-The other set of tests run Firefox, Chrome and Internet Explorer with [webdriver](https://github.com/niklasvh/webdriver.js). The selenium standalone server (runs on Java) is required for these tests and can be downloaded from [here](http://code.google.com/p/selenium/downloads/list). They capture an actual screenshot from the test pages and compare the image to the screenshot created by html2canvas and calculate the percentage differences. These tests generally aren't expected to provide 100% matches, but while commiting changes, these should generally not go decrease from the baseline values.
-
-Start by downloading the dependencies:
-
-    $ npm install
-
-Run qunit tests:
-
-    $ grunt test
 
 ### Examples ###
 
